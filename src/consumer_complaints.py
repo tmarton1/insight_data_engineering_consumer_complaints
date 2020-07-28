@@ -5,9 +5,6 @@ import csv
 import math
 import sys
 
-input_filename=sys.argv[1]
-output_filename=sys.argv[2]
-
 #Include a rounding function that always rounds x.5 up to x+1
 def round_half_up(n, decimals=0):
     multiplier=10**decimals
@@ -62,6 +59,11 @@ def organize(company_complaints,filename):
 def summarize(input_filename,output_filename):
     company_complaints=nest(input_filename)
     organize(company_complaints,output_filename)
+    
+if __name__ == "__main__":
+    input_filename=sys.argv[1]
+    output_filename=sys.argv[2]
+    summarize(input_filename,output_filename)
 
 
 
