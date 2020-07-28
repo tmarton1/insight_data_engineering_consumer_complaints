@@ -1,2 +1,2 @@
-python3
+virtualenv -p python3 .
 print('start')
