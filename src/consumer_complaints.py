@@ -3,6 +3,10 @@
 #Summarize complaints for each product-year in report
 import csv
 import math
+import sys
+
+input_filename=sys.argv[1]
+output_filename=sys.argv[2]
 
 #Include a rounding function that always rounds x.5 up to x+1
 def round_half_up(n, decimals=0):
