@@ -1,3 +1,1 @@
-python3
-from src import consumer_complaints
-consumer_complaints.summarize("input/complaints.csv","output/report.csv")
+./src/consumer_complaints.py ./input/complaints.csv ./output/report.csv
