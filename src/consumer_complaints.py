@@ -46,8 +46,8 @@ def organize(company_complaints,filename):
         for product_year_no in range(len(sorted_product_years)):
             product_year=sorted_product_years[product_year_no]
             product=sorted_product_years[product_year_no][:-6]
-            if "," in product:
-                product='\"'+product+'\"'
+            #if "," in product:
+                #product='\"'+product+'\"'
             year=sorted_product_years[product_year_no][-4:]
             product_year_total=sum(company_complaints[product_year].values())
             product_year_companies=len(company_complaints[product_year])
